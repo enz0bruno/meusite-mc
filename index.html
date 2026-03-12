@@ -327,9 +327,9 @@
                                         </h2>
                                     </div>
                                     <h1 className="text-6xl md:text-8xl font-serif leading-[1.1] mb-10 text-brand-brown-dark tracking-tighter">
-                                        A Estética em sua <span className="italic font-light text-brand-rose text-glow">Melhor Versão</span>
+                                        A Estética em sua <span className="italic font-light text-brand-rose text-glow inline-block">Melhor Versão</span>
                                     </h1>
-                                    <p className="text-xl md:text-2xl text-brand-brown-dark/60 mb-14 leading-relaxed font-serif italic max-w-3xl">
+                                    <p className="text-xl md:text-2xl text-brand-brown-dark/50 mb-14 leading-relaxed font-serif italic font-light max-w-3xl">
                                         Tratamentos exclusivos para mulheres que buscam o extraordinário. 
                                         Ciência e sofisticação em cada detalhe.
                                     </p>
@@ -344,10 +344,10 @@
                                             href="https://wa.me/5511976639359"
                                             target="_blank"
                                             rel="noopener noreferrer"
-                                            className="glass px-12 py-5 rounded-full text-xs uppercase tracking-[0.4em] font-bold text-brand-brown-dark hover:bg-brand-rose hover:text-white transition-all flex items-center justify-center gap-3 shadow-luxury"
+                                            className="glass px-12 py-5 rounded-full text-xs uppercase font-bold text-brand-brown-dark hover:bg-brand-rose hover:text-white transition-all flex items-center justify-center gap-3 shadow-luxury"
                                         >
                                             <Icon name="MessageCircle" size={20} />
-                                            <span className="translate-x-[0.2em]">WhatsApp</span>
+                                            <span className="tracking-[0.4em] pl-[0.4em]">WhatsApp</span>
                                         </a>
                                     </div>
                                 </motion.div>
@@ -411,9 +411,11 @@
                                                 </div>
                                             </div>
                                             <div className="px-4">
-                                                <div className="flex justify-between items-baseline mb-4">
+                                                <div className="flex justify-between items-center mb-4">
                                                     <h4 className="text-3xl font-serif text-brand-brown-dark">{service.title}</h4>
-                                                    <span className="text-brand-brown-dark font-serif text-2xl font-bold border-b border-brand-rose/30">{service.price}</span>
+                                                    <div className="bg-brand-rose/10 px-4 py-2 rounded-xl border border-brand-rose/20">
+                                                        <span className="text-brand-brown-dark font-sans text-lg font-bold tracking-tight">{service.price}</span>
+                                                    </div>
                                                 </div>
                                                 <p className="text-brand-brown-dark/60 leading-relaxed font-light">
                                                     {service.description}
